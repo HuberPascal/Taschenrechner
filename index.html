@@ -7,6 +7,34 @@
     <title>Taschenrechner</title>
   </head>
   <body>
+    <div class="calculator">
+      <div class="resultArea">
+        <div id="resultContainer"></div>
+      </div>
+      <div class="number-area">
+        <div class="box unset"></div>
+        <div class="box unset"></div>
+        <div class="box unset"></div>
+        <div onclick="clearDisplay()" class="box">DEL</div>
+        <div onclick="appendOperation(7)" class="box">7</div>
+        <div onclick="appendOperation(8)" class="box">8</div>
+        <div onclick="appendOperation(9)" class="box">9</div>
+        <div onclick="appendOperation(' / ')" class="box highlight">/</div>
+        <div onclick="appendOperation(4)" class="box">4</div>
+        <div onclick="appendOperation(5)" class="box">5</div>
+        <div onclick="appendOperation(6)" class="box">6</div>
+        <div onclick="appendOperation(' * ')" class="box highlight">x</div>
+        <div onclick="appendOperation(1)" class="box">1</div>
+        <div onclick="appendOperation(2)" class="box">2</div>
+        <div onclick="appendOperation(3)" class="box">3</div>
+        <div onclick="appendOperation(' + ')" class="box highlight">+</div>
+        <div onclick="appendOperation(0)" class="box">0</div>
+        <div onclick="appendOperation('.')" class="box">,</div>
+        <div onclick="calculateResult()" class="box result">=</div>
+        <div onclick="appendOperation(' - ')" class="box highlight">-</div>
+      </div>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
